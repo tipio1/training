@@ -1,0 +1,31 @@
+arduino: # en bleu = la clé (uniquement visible dans VSCode)
+    name: "Arduino" # en rouge= la valeur (uniquement visible dans VSCode)
+    model: "Arduino Uno"
+    model temperature sensor: "H12V32"
+    buyer: "Ben"
+    master: "Raspberry Pi"
+    sensors:
+        - temperature_1:
+            metric: temperature
+            name: temperature_1
+            model: "qazwsx"
+            address: aaaaan
+        - temperature_2:
+            metric: temperature
+            name: temperature_2
+            model: "dsadsa"
+        - temperature_3:
+            metric: temperature
+            name: temperature_3
+            model: "fdsfds"
+        - humidity_1:
+            metric: humidity
+            name: humidity_1
+            model: "gfdgfd"
+        - humidity_2:
+            metric: humidity
+            name: humidity_2
+            model: "hgfhfg"
+    pins:
+        - analog: 
+            -
