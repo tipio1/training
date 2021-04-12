@@ -1,9 +1,17 @@
-arduino: # en bleu = la clé (uniquement visible dans VSCode)
-    name: "Arduino" # en rouge= la valeur (uniquement visible dans VSCode)
-    model: "Arduino Uno"
-    model temperature sensor: "H12V32"
-    buyer: "Ben"
-    master: "Raspberry Pi"
+arduino:                        # en bleu = la clé (uniquement visible dans VSCode)
+    name: "Arduino"             # en rouge= la valeur (uniquement visible dans VSCode)
+    model: "Arduino Uno R3"
+                                # La carte Uno dispose de :
+                                # un processeur ATMega 328P
+                                # 14 entrées/sorties numériques dont 6 peuvent être utilisées comme PWM
+                                # 6 entrées/sorties analogiques qui peuvent aussi être utilisées comme entrées/sorties numériques
+                                # un résonateur céramique 16 MHz
+                                # une connectique USB B femelle
+                                # un jack 3,5/2,1 mm pour l’alimentation
+                                # un bouton reset
+                                # un connecteur ICSP
+    buyer: "BenR"
+    master: "Raspberry Pi2"
     sensors:
         - temperature_1:
             metric: temperature
@@ -27,6 +35,58 @@ arduino: # en bleu = la clé (uniquement visible dans VSCode)
             name: humidity_2
             model: "hgfhfg"
     pins:
-        - analog: 
-            - A0: 
-            - A1:  
+        - numeric: 
+                # Entrées/Sorties numériques
+                # de 0 à 13
+                # peuvent aussi être utilisées comme entrées ou sorties digitales avec les fonctions
+                    # pinMode
+                    # digitalWrite
+                    # digitalRead
+            - physical pin: num0 
+                serial pin: RX              # received
+            - physical pin: num1 
+                serial pin: TX              # transmit
+            - physical pin: num2
+                pin function: int0          # externe interuption
+            - physical pin: num3
+                pin function: int1, oc2b    # externe interuption
+                pwm pin: pwm
+            - physical pin: num4
+                pin function: t0, xck
+            - physical pin: num5
+                pin function: t1
+                pwm pin: pwm
+            - physical pin: num6
+                pin function: ain0, oc0a
+                pwm pin: pwm
+            - physical pin: num7
+                pin function: ain1
+            - physical pin: num8
+                pin function: clko, icp1
+            - physical pin: num9
+                pin function: oc1a
+                pwm pin: pwm
+            - physical pin: num10
+                pin function: oc1b, ss      # protocole SPI permettant des transferts à haute vitesse 
+                pwm pin: pwm         
+            - physical pin: num11
+                pin function: oc2a, mosi    # protocole SPI permettant des transferts à haute vitesse
+                pwm pin: pwm
+            - physical pin: num12
+                pin function: miso          # protocole SPI permettant des transferts à haute vitesse
+            - physical pin: num13
+                pin function: sck           # protocole SPI permettant des transferts à haute vitesse
+        
+        - analogic in:
+                # 6 broches analogiques numérotées de A0 à A5
+                # par défaut, elles mesurent le voltage de 0 à 5 V
+                # il est possible de changer cette limite supérieure en utilisant 
+                    # la broche "AREF" et la fonction analogReference()
+            - physical pin: ana0
+            - physical pin: ana1
+            - physical pin: ana2
+            - physical pin: ana3
+            - physical pin: ana4
+                serial pin: sda             # utilisée pour communiquer en utilisant la Bibliothèque Wire, constitue le bus I2C
+            - physical pin: ana5
+                serial pin: scl             # utilisée pour communiquer en utilisant la Bibliothèque Wire, constitue le bus I2C
