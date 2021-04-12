@@ -28,4 +28,5 @@ arduino: # en bleu = la clé (uniquement visible dans VSCode)
             model: "hgfhfg"
     pins:
         - analog: 
-            -
+            - A0: 
+            - A1:  
