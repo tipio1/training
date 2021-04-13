@@ -12,6 +12,7 @@ arduino:                        # en bleu = la clé (uniquement visible dans VSC
                                 # un connecteur ICSP
     buyer: "BenR"
     master: "Raspberry Pi2"
+    ip: 169.254.223.etc
     sensors:
         - temperature_1:
             metric: temperature
