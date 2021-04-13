@@ -13,27 +13,28 @@ arduino:                        # en bleu = la clé (uniquement visible dans VSC
     buyer: "BenR"
     master: "Raspberry Pi2"
     ip: 169.254.223.etc
+    
     sensors:
         - temperature_1:
             metric: temperature
             name: temperature_1
             model: "qazwsx"
             address: aaaaan
-        - temperature_2:
-            metric: temperature
-            name: temperature_2
+        - mouvements_1:
+            metric: mouvement proche
+            name: mouvement_1
             model: "dsadsa"
-        - temperature_3:
-            metric: temperature
-            name: temperature_3
+        - lumière_1:
+            metric: luminosité
+            name: luminosité_1
             model: "fdsfds"
-        - humidity_1:
-            metric: humidity
-            name: humidity_1
+        - led_1:
+            metric: courant
+            name: courant_1
             model: "gfdgfd"
-        - humidity_2:
-            metric: humidity
-            name: humidity_2
+        - led_2:
+            metric: courant
+            name: courant_2
             model: "hgfhfg"
     pins:
         - digital pin: 
