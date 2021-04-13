@@ -35,58 +35,110 @@ arduino:                        # en bleu = la clé (uniquement visible dans VSC
             name: humidity_2
             model: "hgfhfg"
     pins:
-        - numeric: 
+        - digital pin: 
                 # Entrées/Sorties numériques
                 # de 0 à 13
                 # peuvent aussi être utilisées comme entrées ou sorties digitales avec les fonctions
                     # pinMode
                     # digitalWrite
                     # digitalRead
-            - physical pin: num0 
+            - physical pin: dig0 
                 serial pin: RX              # received
-            - physical pin: num1 
+            - physical pin: dig1 
                 serial pin: TX              # transmit
-            - physical pin: num2
+            - physical pin: dig2
                 pin function: int0          # externe interuption
-            - physical pin: num3
+            - physical pin: dig3
                 pin function: int1, oc2b    # externe interuption
                 pwm pin: pwm
-            - physical pin: num4
+            - physical pin: dig4
                 pin function: t0, xck
-            - physical pin: num5
+            - physical pin: dig5
                 pin function: t1
                 pwm pin: pwm
-            - physical pin: num6
+            - physical pin: dig6
                 pin function: ain0, oc0a
                 pwm pin: pwm
-            - physical pin: num7
+            - physical pin: dig7
                 pin function: ain1
-            - physical pin: num8
+            - physical pin: dig8
                 pin function: clko, icp1
-            - physical pin: num9
+            - physical pin: dig9
                 pin function: oc1a
                 pwm pin: pwm
-            - physical pin: num10
+            - physical pin: dig10
                 pin function: oc1b, ss      # protocole SPI permettant des transferts à haute vitesse 
                 pwm pin: pwm         
-            - physical pin: num11
+            - physical pin: dig11
                 pin function: oc2a, mosi    # protocole SPI permettant des transferts à haute vitesse
                 pwm pin: pwm
-            - physical pin: num12
+            - physical pin: dig12
                 pin function: miso          # protocole SPI permettant des transferts à haute vitesse
-            - physical pin: num13
+            - physical pin: dig13
                 pin function: sck           # protocole SPI permettant des transferts à haute vitesse
         
-        - analogic in:
+        - analogic pin:
                 # 6 broches analogiques numérotées de A0 à A5
                 # par défaut, elles mesurent le voltage de 0 à 5 V
-                # il est possible de changer cette limite supérieure en utilisant 
-                    # la broche "AREF" et la fonction analogReference()
+                # il est possible de changer cette limite supérieure en utilisant la broche "AREF" et la fonction analogReference()
             - physical pin: ana0
             - physical pin: ana1
             - physical pin: ana2
             - physical pin: ana3
             - physical pin: ana4
-                serial pin: sda             # utilisée pour communiquer en utilisant la Bibliothèque Wire, constitue le bus I2C
+                serial pin: i2c/sda             # utilisée pour communiquer en utilisant la Bibliothèque Wire, constitue le bus I2C
             - physical pin: ana5
-                serial pin: scl             # utilisée pour communiquer en utilisant la Bibliothèque Wire, constitue le bus I2C
+                serial pin: i2c/scl             # utilisée pour communiquer en utilisant la Bibliothèque Wire, constitue le bus I2C
+
+        - power pin:
+            - vin: vin7-12V                     # depending on current drawn
+            - gnd0: gnd0                        # les masses. Servent à fermer le circuit
+                emplacement: digital raw
+            - gnd1: gnd1
+                emplacement: analog in raw
+            - gnd2: gnd2
+                emplacement: analog in raw
+            - 5V: 5v                            # alimentation courant 5Volt
+                emplacement: analog in raw
+            - 3V3: 3V3                          # délivre du 3V3 pour un ampérage maximum de 50 mA. peut être utilisée pour alimenter un composant à ce voltage
+                emplacement: analog in raw
+            - reset: reset                      # Mettre cette broche à LOW permet de redémarrer la carte. Beaucoup utilisée avec les shields pour permettre un redémarrage lorsque le bouton physique de la carte est inaccessible
+                emplacement: analog in raw
+            - ioref: ioref5V                    # donne le voltage de référence à lequel la carte fonctionne. Dans le cas du Uno, elle sera à 5V. Sert surtout pour les shields
+                emplacement: analog in raw
+            - aref: arefV                       # Voltage de référence pour les broches analogiques, à utiliser avec la fonction analogReference().
+
+        -iscp1: iscp                            # broche basse indépendante de 6 pins en bas de la carte pour connexion matériels
+            - gnd3: gnd3                        # les masses. Servent à fermer le circuit
+                emplacement: left down raw
+            - digital pin1: iscp1_dig11
+                emplacement: center down raw
+                pin function: oc2a, mosi
+                pwm pin: pwm
+            - 5V_1: 5v_1                         # alimentation courant 5Volt
+                emplacement: right down raw
+            - reset_1: reset_1
+                emplacement: left up raw
+            - digital pin2: iscp1_dig12
+                emplacement: right up raw
+                pin function: sck
+            - digital pin3: iscp1_dig13
+                emplacement: center up raw
+                pin function: miso
+        
+        -iscp: atmega8u2/atmega16u2             # broche haute indépendante de 6 pins en bas de la carte pour connexion matériels
+            - gnd4: gnd4                        # les masses. Servent à fermer le circuit
+                emplacement: left down raw
+            - digital pin4: iscp2_dig20
+                emplacement: center down raw
+                pin function: mosi2
+            - 5V_2: 5v_2                         # alimentation courant 5Volt
+                emplacement: right down raw
+            - reset_2: reset_2
+                emplacement: left up raw
+            - digital pin5: iscp1_dig21
+                emplacement: center up raw
+                pin function: sck2
+            - digital pin6: iscp1_dig22
+                emplacement: right up raw
+                pin function: miso2
