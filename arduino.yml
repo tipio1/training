@@ -1,6 +1,15 @@
-arduino:                        # en bleu = la clé (uniquement visible dans VSCode)
-    name: "Arduino"             # en rouge= la valeur (uniquement visible dans VSCode)
-    model: "Arduino Uno R3"
+---
+                                # en bleu = la clé (uniquement visible dans VSCode)
+                                # en rouge= la valeur (uniquement visible dans VSCode)
+arduino:                          
+    - name: "Arduino" 
+
+    - statut: on/off
+        on/off:
+            - true      # ne peut pas ecrir le mot entier ou passe en bleu=>key // idem pour false
+            - "false" 
+                        # faut il mettre des guillemets partout?
+    - model: "Arduino Uno R3"
                                 # La carte Uno dispose de :
                                 # un processeur ATMega 328P
                                 # 14 entrées/sorties numériques dont 6 peuvent être utilisées comme PWM
@@ -10,33 +19,55 @@ arduino:                        # en bleu = la clé (uniquement visible dans VSC
                                 # un jack 3,5/2,1 mm pour l’alimentation
                                 # un bouton reset
                                 # un connecteur ICSP
-    buyer: "BenR"
-    master: "Raspberry Pi2"
-    ip: 169.254.223.etc
+    - buyer: "BenR"
+    - master: "Raspberry Pi2"
+    - ip: 169.254.223.etc
     
-    sensors:
+    - sensors:
         - temperature_1:
             metric: temperature
             name: temperature_1
             model: "qazwsx"
             address: aaaaan
+            statut: 
+                -true
+                -false
         - mouvements_1:
             metric: mouvement proche
             name: mouvement_1
             model: "dsadsa"
+            address: aaaaan
+            statut: 
+                -true
+                -false
         - lumière_1:
             metric: luminosité
             name: luminosité_1
             model: "fdsfds"
+            address: aaaaan
+            statut: 
+                -true
+                -false
         - led_1:
             metric: courant
             name: courant_1
             model: "gfdgfd"
+            address: aaaaan
+            statut: 
+                -true
+                -false
         - led_2:
             metric: courant
             name: courant_2
             model: "hgfhfg"
-    pins:
+            address: aaaaan
+            statut: 
+                -true
+                -false
+
+    - nombre de sensors actifs: "{{ variable }}/additional/statut/sensors"  # comment utiliser la variable plus précisément dans un fichier de config?
+
+    - pins:
         - digital pin: 
                 # Entrées/Sorties numériques
                 # de 0 à 13
@@ -51,28 +82,40 @@ arduino:                        # en bleu = la clé (uniquement visible dans VSC
             - physical pin: dig2
                 pin function: int0          # externe interuption
             - physical pin: dig3
-                pin function: int1, oc2b    # externe interuption
+                pin function: 
+                    - int1
+                    - oc2b                  # externe interuption
                 pwm pin: pwm
             - physical pin: dig4
-                pin function: t0, xck
+                pin function: 
+                    - t0
+                    - xck
             - physical pin: dig5
                 pin function: t1
                 pwm pin: pwm
             - physical pin: dig6
-                pin function: ain0, oc0a
+                pin function: 
+                    - ain0
+                    - oc0a
                 pwm pin: pwm
             - physical pin: dig7
                 pin function: ain1
             - physical pin: dig8
-                pin function: clko, icp1
+                pin function: 
+                    - clko
+                    - icp1
             - physical pin: dig9
                 pin function: oc1a
                 pwm pin: pwm
             - physical pin: dig10
-                pin function: oc1b, ss      # protocole SPI permettant des transferts à haute vitesse 
+                pin function: 
+                    - oc1b
+                    - ss                    # protocole SPI permettant des transferts à haute vitesse 
                 pwm pin: pwm         
             - physical pin: dig11
-                pin function: oc2a, mosi    # protocole SPI permettant des transferts à haute vitesse
+                pin function: 
+                    - oc2a 
+                    - mosi                  # protocole SPI permettant des transferts à haute vitesse
                 pwm pin: pwm
             - physical pin: dig12
                 pin function: miso          # protocole SPI permettant des transferts à haute vitesse
@@ -97,25 +140,27 @@ arduino:                        # en bleu = la clé (uniquement visible dans VSC
             - gnd0: gnd0                        # les masses. Servent à fermer le circuit
                 emplacement: digital raw
             - gnd1: gnd1
-                emplacement: analog in raw
+                emplacement: 'analog in' raw
             - gnd2: gnd2
-                emplacement: analog in raw
+                emplacement: 'analog in' raw
             - 5V: 5v                            # alimentation courant 5Volt
-                emplacement: analog in raw
+                emplacement: 'analog in' raw
             - 3V3: 3V3                          # délivre du 3V3 pour un ampérage maximum de 50 mA. peut être utilisée pour alimenter un composant à ce voltage
-                emplacement: analog in raw
+                emplacement: 'analog in' raw
             - reset: reset                      # Mettre cette broche à LOW permet de redémarrer la carte. Beaucoup utilisée avec les shields pour permettre un redémarrage lorsque le bouton physique de la carte est inaccessible
-                emplacement: analog in raw
+                emplacement: 'analog in' raw
             - ioref: ioref5V                    # donne le voltage de référence à lequel la carte fonctionne. Dans le cas du Uno, elle sera à 5V. Sert surtout pour les shields
-                emplacement: analog in raw
+                emplacement: 'analog in' raw
             - aref: arefV                       # Voltage de référence pour les broches analogiques, à utiliser avec la fonction analogReference().
 
-        -iscp1: iscp                            # broche basse indépendante de 6 pins en bas de la carte pour connexion matériels
+        - iscp1: iscp                            # broche basse indépendante de 6 pins en bas de la carte pour connexion matériels
             - gnd3: gnd3                        # les masses. Servent à fermer le circuit
                 emplacement: left down raw
             - digital pin1: iscp1_dig11
                 emplacement: center down raw
-                pin function: oc2a, mosi
+                pin function: 
+                    - oc2a 
+                    - mosi
                 pwm pin: pwm
             - 5V_1: 5v_1                         # alimentation courant 5Volt
                 emplacement: right down raw
@@ -128,7 +173,7 @@ arduino:                        # en bleu = la clé (uniquement visible dans VSC
                 emplacement: center up raw
                 pin function: miso
         
-        -iscp: atmega8u2/atmega16u2             # broche haute indépendante de 6 pins en bas de la carte pour connexion matériels
+        - iscp: atmega8u2/atmega16u2             # broche haute indépendante de 6 pins en bas de la carte pour connexion matériels
             - gnd4: gnd4                        # les masses. Servent à fermer le circuit
                 emplacement: left down raw
             - digital pin4: iscp2_dig20
@@ -144,3 +189,6 @@ arduino:                        # en bleu = la clé (uniquement visible dans VSC
             - digital pin6: iscp1_dig22
                 emplacement: right up raw
                 pin function: miso2
+
+
+...
