@@ -1,0 +1,373 @@
+{
+    "global": {
+      "scrape_interval": "15s"
+    },
+    "scrape_configs": [
+      {
+        "job_name": [
+          "node",
+          "arduino"
+        ]
+      }
+    ],
+    "static_configs": [
+      {
+        "targets": [
+          "localhost:9100"
+        ]
+      }
+    ],
+    "arduino": {
+      "name": "Arduino",
+      "statut": {
+        "possible status": [
+          {
+            "name": "on"
+          },
+          {
+            "name": "off"
+          },
+          {
+            "name": "sleep"
+          }
+        ]
+      },
+      "model": "Arduino Uno R3",
+      "buyer": "BenR",
+      "master": "Raspberry Pi2",
+      "ip": "169.254.223.etc",
+      "sensors": [
+        {
+            "temperature_1": {
+                "metric": "temperature",
+                "name": "temperature_1",
+                "model": "qazwsx",
+                "address": "aaaaan",
+                "statut on": [
+                  true,
+                  false,
+                  {
+                    "statut sleep": [
+                      true,
+                      false
+                    ]
+                  }
+                ]
+              }
+          },
+        {
+          "mouvements_1": {
+            "metric": "mouvement proche",
+            "name": "mouvement_1",
+            "model": "dsadsa",
+            "address": "aaaaan",
+            "statut": "-true -false"
+          }
+        },
+        {
+          "lumière_1": {
+            "metric": "luminosité",
+            "name": "luminosité_1",
+            "model": "fdsfds",
+            "address": "aaaaan",
+            "statut": "-true -false"
+          }
+        },
+        {
+          "led_1": {
+            "metric": "courant",
+            "name": "courant_1",
+            "model": "gfdgfd",
+            "address": "aaaaan",
+            "statut": "-true -false"
+          }
+        },
+        {
+          "led_2": {
+            "metric": "courant",
+            "name": "courant_2",
+            "model": "hgfhfg",
+            "address": "aaaaan",
+            "statut": "-true -false"
+          }
+        }
+      ],
+      "nombre de sensors actifs": 3,
+      "pins": {
+        "digital pin": [
+          {
+            "physical pin": {
+              "name": "dig0",
+              "serial pin": "RX"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig1",
+              "serial pin": "TX"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig2",
+              "pin function": "int0"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig3",
+              "pin function": [
+                "int1",
+                "oc2b"
+              ],
+              "pwm pin": "pwm"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig4",
+              "pin function": [
+                "t0",
+                "xck"
+              ]
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig5",
+              "pin function": "t1",
+              "pwm pin": "pwm"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig6",
+              "pin function": [
+                "ain0",
+                "oc0a"
+              ],
+              "pwm pin": "pwm"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig7",
+              "pin function": "ain1"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig8",
+              "pin function": [
+                "clko",
+                "icp1"
+              ]
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig9",
+              "pin function": "oc1a",
+              "pwm pin": "pwm"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig10",
+              "pin function": [
+                "oc1b",
+                "ss"
+              ],
+              "pwm pin": "pwm"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig11",
+              "pin function": [
+                "oc2a",
+                "mosi"
+              ],
+              "pwm pin": "pwm"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig12",
+              "pin function": "miso"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "dig13",
+              "pin function": "sck"
+            }
+          }
+        ],
+        "analogic pin": [
+          {
+            "physical pin": "ana0"
+          },
+          {
+            "physical pin": "ana1"
+          },
+          {
+            "physical pin": "ana2"
+          },
+          {
+            "physical pin": "ana3"
+          },
+          {
+            "physical pin": {
+              "name": "ana4",
+              "serial pin": "i2c/sda"
+            }
+          },
+          {
+            "physical pin": {
+              "name": "ana5",
+              "serial pin": "i2c/scl"
+            }
+          }
+        ],
+        "power pin": [
+          {
+            "vin": "vin7-12V"
+          },
+          {
+            "gnd0": {
+              "name": "gnd0",
+              "emplacement": "digital raw"
+            }
+          },
+          {
+            "gnd1": {
+              "name": "gnd1",
+              "emplacement": "analog in raw"
+            }
+          },
+          {
+            "gnd2": {
+              "name": "gnd2",
+              "emplacement": "analog in raw"
+            }
+          },
+          {
+            "5V": {
+              "name": "5v",
+              "emplacement": "analog in raw"
+            }
+          },
+          {
+            "3V3": {
+              "name": "3V3",
+              "emplacement": "analog in raw"
+            }
+          },
+          {
+            "reset": {
+              "name": "reset",
+              "emplacement": "analog in raw"
+            }
+          },
+          {
+            "ioref": {
+              "name": "ioref5V",
+              "emplacement": "analog in raw"
+            }
+          },
+          {
+            "aref": {
+              "name": "arefV"
+            }
+          }
+        ],
+        "iscp1": [
+          {
+            "gnd3": {
+              "name": "gnd3",
+              "emplacement": "left down raw"
+            }
+          },
+          {
+            "digital pin1": {
+              "name": "iscp1_dig11",
+              "emplacement": "center down raw",
+              "pin function": [
+                "oc2a",
+                "mosi"
+              ],
+              "pwm pin": "pwm"
+            }
+          },
+          {
+            "5V_1": {
+              "name": "5v_1",
+              "emplacement": "right down raw"
+            }
+          },
+          {
+            "reset_1": {
+              "name": "reset_1",
+              "emplacement": "left up raw"
+            }
+          },
+          {
+            "digital pin2": {
+              "name": "iscp1_dig12",
+              "emplacement": "right up raw",
+              "pin function": "sck"
+            }
+          },
+          {
+            "digital pin3": {
+              "name": "iscp1_dig13",
+              "emplacement": "center up raw",
+              "pin function": "miso"
+            }
+          }
+        ],
+        "iscp": [
+          {
+            "gnd4": {
+              "name": "gnd4",
+              "emplacement": "left down raw"
+            }
+          },
+          {
+            "digital pin4": {
+              "name": "iscp2_dig20",
+              "emplacement": "center down raw",
+              "pin function": "mosi2"
+            }
+          },
+          {
+            "5V_2": {
+              "name": "5v_2",
+              "emplacement": "right down raw"
+            }
+          },
+          {
+            "reset_2": {
+              "name": "reset_2",
+              "emplacement": "left up raw"
+            }
+          },
+          {
+            "digital pin5": {
+              "name": "iscp1_dig21",
+              "emplacement": "center up raw",
+              "pin function": "sck2"
+            }
+          },
+          {
+            "digital pin6": {
+              "name": "iscp1_dig22",
+              "emplacement": "right up raw",
+              "pin function": "miso2"
+            }
+          }
+        ]
+      }
+    }
+  }
