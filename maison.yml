@@ -1,0 +1,73 @@
+---
+wcc_house:
+    pièces:
+        entrée:
+          - telephone:
+        cuisine:
+          fenetre:
+          equipements:
+            - lave_vaiselle:
+            - paques_cuisson:
+            - four:
+            - micro_ondes:
+            - frigidaire:
+        salon:
+          fenetres:
+          equipements: 
+            - television:
+            - box:
+            - platines:
+        bureau:
+          fenetre:
+          equipements:
+            - atelier:
+            - ordinateur:
+        couloir:
+          - meuble_a_chaussure:
+        wc:
+          placard:
+          compteurs:
+            - eau_froide:
+            - eau_chaude:
+          equipements:
+            - toilette:
+        sdb:
+          fenetre:
+          equipements:
+            - baignoire:
+            - lave_linge:
+        dressing:
+        chambres_miniboys:
+          fenetre:
+          equipements:
+        chambre: 
+          fenetre:
+          equipements:
+    balcons:
+        balcon_salon:
+          - rosiers:
+          - salon_balcon:
+        balcon_chambres_miniboys:
+          - pots_fleurs:
+    réseau_electrique:
+        panneau_electrique:
+          - disjoncteurs:
+        prises:
+          - 10A: 12
+          - 16A: 2
+        lumières:
+          - interupteurs:
+          - ampoules:
+    réseau_hydrolique_chaud_froid:
+        lavabos:
+          - cuisine: 1
+          - sdb: 1
+        arrivée:
+          - cuisine: 1
+          - wc: 1
+          - sdb: 1
+    cave:
+        - droite:
+        - gauche:
+        - fond:
+...
