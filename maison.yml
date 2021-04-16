@@ -2,46 +2,123 @@
 wcc_house:
     pièces:
         entrée:
-          - telephone:
+          porte_entree: chene_bois_3_points
+          murs: verts_bouteille
+          lumiere: lustre_shere_verre
+          interupteurs: 3
+          panneau_electrique:
+            - disjoncteur_principal: h2RTX83
+            - disjoncteurs: 4
+          console_d_entree: angle_2_tirroirs
+          telephone: cabine_annee_70
+          porte_manteaux: 4_points
+        couloir:
+          murs: verts_bouteille
+          placard_chaussures: 4
+          cadres: 6
         cuisine:
-          fenetre:
+          murs: vert_pistache
+          fenetre: 1
+          lumieres: leds_plafond
+          interupteurs: 1
+          prises_electrique: 7
+          meuble_a_economat: 3_etageres
+          meubles_de_rangement:
+            - meuble_haut: 3_parties
+            - meuble_bas: 7_tirroirs
           equipements:
-            - lave_vaiselle:
-            - paques_cuisson:
+            - plaques_cuisson:
+            - hote:
             - four:
             - micro_ondes:
+            - cafetiere:
             - frigidaire:
+            - lavabo:
+            - lave_vaisselle:
         salon:
-          fenetres:
+          murs: blanc
+          radiateur: 1
+          fenetres: 3
+          lumieres: ampoule_avea
+          interupteurs: 1
+          prises_electrique: 1
           equipements: 
-            - television:
-            - box:
-            - platines:
+            - television: lg_12s23
+            - box: free
+            - platines: technics_mk2
+            - table_de_mixage: denon
+            - enceintes: mackie_aplifiees
+            - carte_son: mackie
+          meubles:
+            - table_et_chaises: table_ronde_chaise_transparante
+            - canape: angle_poltron_et_sofa
+            - buffet:
+            - chaise_geante:
+            - etagere_cd:
+          bibliotheque:
         bureau:
-          fenetre:
-          equipements:
+          murs: blanc
+          radiateur: 1
+          fenetre: 1
+          lumieres: 2_mural
+          interupteurs: 1
+          interupteurs: 1
+          prises_electrique: 2
+          meubles:
             - atelier:
+            - bureau_ordinateur:
+            - table_a_dessin:
+            - tabouret:
+            - fauteuil:
+          equipements:
             - ordinateur:
-        couloir:
-          - meuble_a_chaussure:
+            - kit_rpi:
+            - imprimante:
         wc:
-          placard:
+          murs: blanc
+          lumieres: aplique_murale
+          interupteurs: 1
+          placard: 2_etageres
+          cadres: papillons
           compteurs:
-            - eau_froide:
-            - eau_chaude:
+            - eau_froide: xzeau_froid
+            - eau_chaude: xzeau_chaude
           equipements:
-            - toilette:
+            - toilette: amine_petit
         sdb:
-          fenetre:
+          murs: carrelage_jaune_bleu
+          radiateur: 1
+          fenetre: 1
+          lumieres: 
+            - murale: applique
+            - plafonnier: 24rp_rond
+          interupteurs: 2
+          prises_electrique: 1
           equipements:
-            - baignoire:
-            - lave_linge:
+            - baignoire: kvl_28u
+            - lave_linge: faur_54Y7
         dressing:
+          murs: papier_peint_art_nouveau
+          interupteurs: 1
+          meubles:
+            - tringle:
+            - etagere:
+            - placard:
         chambres_miniboys:
+          murs:
+          radiateur:
           fenetre:
+          lumieres:
+          interupteurs: 2
+          prises_electrique:
           equipements:
         chambre: 
+          murs:
+          radiateur:
           fenetre:
+          lumieres:
+          interupteurs: 1
+          prises_electrique:
           equipements:
     balcons:
         balcon_salon:
@@ -49,23 +126,9 @@ wcc_house:
           - salon_balcon:
         balcon_chambres_miniboys:
           - pots_fleurs:
-    réseau_electrique:
-        panneau_electrique:
-          - disjoncteurs:
-        prises:
-          - 10A: 12
-          - 16A: 2
         lumières:
           - interupteurs:
           - ampoules:
-    réseau_hydrolique_chaud_froid:
-        lavabos:
-          - cuisine: 1
-          - sdb: 1
-        arrivée:
-          - cuisine: 1
-          - wc: 1
-          - sdb: 1
     cave:
         - droite:
         - gauche:
