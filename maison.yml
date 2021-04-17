@@ -1,8 +1,8 @@
 ---
 wcc_house:
-    pièces:
-        entrée:
-          porte_entree: chene_bois_3_points
+    pieces:
+        entree:
+          porte_entree: bouleau_vernis_3_points
           murs: verts_bouteille
           lumiere: lustre_shere_verre
           interupteurs: 3
