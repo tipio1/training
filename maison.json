@@ -1,0 +1,290 @@
+{
+    "wcc_house": {
+      "pieces": {
+        "entree": {
+          "porte_entree": "chene_vernis_3_points",
+          "murs": "verts_bouteille",
+          "lumiere": "lustre_sfere_verre",
+          "interupteurs": 3,
+          "panneau_electrique": [
+            {
+              "disjoncteur_principal": "h2RTX83"
+            },
+            {
+              "disjoncteurs": 4
+            }
+          ],
+          "console_d_entree": "angle_2_tirroirs",
+          "telephone": "cabine_annee_70",
+          "porte_manteaux": "4_points"
+        },
+        "couloir": {
+          "murs": "verts_bouteille",
+          "placard_chaussures": 4,
+          "cadres": 6
+        },
+        "cuisine": {
+          "murs": "vert_pistache",
+          "fenetre": 1,
+          "lumieres": "leds_plafond",
+          "interupteurs": 1,
+          "prises_electrique": 7,
+          "meuble_a_economat": "3_etageres",
+          "meubles_de_rangement": [
+            {
+              "meuble_haut": "3_parties"
+            },
+            {
+              "meuble_bas": "7_tirroirs"
+            }
+          ],
+          "equipements": [
+            {
+              "plaques_cuisson": "xp12"
+            },
+            {
+              "hote": "aspi5"
+            },
+            {
+              "four": "convect_pulse"
+            },
+            {
+              "micro_ondes": "ceurfui"
+            },
+            {
+              "cafetiere": "nespress"
+            },
+            {
+              "frigidaire": "germa_vint"
+            },
+            {
+              "lavabo": "classic_metal"
+            },
+            {
+              "lave_vaisselle": "rowe_mini"
+            }
+          ]
+        },
+        "salon": {
+          "murs": "blanc",
+          "radiateur": 1,
+          "fenetres": 3,
+          "lumieres": "ampoule_avea",
+          "interupteurs": 1,
+          "prises_electrique": 1,
+          "equipements": [
+            {
+              "television": "l_12s23"
+            },
+            {
+              "box": "free"
+            },
+            {
+              "platines": "m2"
+            },
+            {
+              "table_de_mixage": "d_ty"
+            },
+            {
+              "enceintes": "aplifiees"
+            },
+            {
+              "carte_son": "stereo"
+            }
+          ],
+          "meubles": [
+            {
+              "table_et_chaises": "table_ronde_chaise_transparante"
+            },
+            {
+              "canape": "angle_poltron_et_sofa"
+            },
+            {
+              "buffet": "gris_metal"
+            },
+            {
+              "chaise_geante": "epreuve_art"
+            },
+            {
+              "etagere_cd": "6_comparts"
+            }
+          ],
+          "bibliotheque_integre": "3_etageres"
+        },
+        "bureau": {
+          "murs": "blanc",
+          "radiateur": 1,
+          "fenetre": 1,
+          "lumieres": "2_murales",
+          "interupteurs": 1,
+          "prises_electrique": 2,
+          "meubles": [
+            {
+              "atelier": "meuble_a_plans"
+            },
+            {
+              "bureau_ordinateur": "ike_reinv"
+            },
+            {
+              "table_a_dessin": 1
+            },
+            {
+              "tabouret": 1
+            },
+            {
+              "fauteuil": 1
+            }
+          ],
+          "equipements": [
+            {
+              "ordinateur": "win10"
+            },
+            {
+              "kit_rpi": "rpi2_no bluetooth"
+            },
+            {
+              "imprimante": 1
+            }
+          ]
+        },
+        "wc": {
+          "murs": "blanc",
+          "lumieres": "aplique_murale",
+          "interupteurs": 1,
+          "placard": "2_etageres",
+          "cadres": "papillons",
+          "compteurs": [
+            {
+              "eau_froide": "xzeau_froid"
+            },
+            {
+              "eau_chaude": "xzeau_chaude"
+            }
+          ],
+          "equipements": [
+            {
+              "toilette": "amine_petit"
+            }
+          ]
+        },
+        "sdb": {
+          "murs": "carrelage_jaune_bleu",
+          "radiateur": 1,
+          "fenetre": 1,
+          "lumieres": [
+            {
+              "murale": "applique"
+            },
+            {
+              "plafonnier": "24rp_rond"
+            }
+          ],
+          "interupteurs": 2,
+          "prises_electrique": 1,
+          "equipements": [
+            {
+              "baignoire": "kvl_28u"
+            },
+            {
+              "lave_linge": "faur_54Y7"
+            }
+          ]
+        },
+        "dressing": {
+          "murs": "papier_peint_art_nouveau",
+          "interupteurs": 1,
+          "meubles": [
+            {
+              "tringle": 1
+            },
+            {
+              "etagere": 2
+            },
+            {
+              "placard": "3_compart"
+            }
+          ]
+        },
+        "chambres_miniboys": {
+          "murs": "blanc_lamin",
+          "radiateur": 1,
+          "fenetre": 1,
+          "lumieres": 2,
+          "interupteurs": 2,
+          "prises_electrique": 1,
+          "meubles": [
+            {
+              "lit": 2
+            },
+            {
+              "commodes": 2
+            },
+            {
+              "baby_foot": 1
+            },
+            {
+              "bureau": 1
+            }
+          ],
+          "bibliotheque_integre": "4_etageres"
+        },
+        "chambre": {
+          "murs": "gris_souris",
+          "radiateur": 1,
+          "fenetre": 1,
+          "lumieres": [
+            {
+              "papillon": 1
+            },
+            {
+              "aplique_murale": 1
+            }
+          ],
+          "interupteurs": 1,
+          "prises_electrique": 2,
+          "equipements": [
+            {
+              "radio": "aw_cd"
+            }
+          ],
+          "meubles": [
+            {
+              "lit": "king_size"
+            },
+            {
+              "commodes": 3
+            },
+            {
+              "console": 1
+            }
+          ]
+        }
+      },
+      "balcons": {
+        "balcon_salon": [
+          {
+            "rosiers": 10
+          },
+          {
+            "salon_balcon": "chaises_table"
+          }
+        ],
+        "balcon_chambres_miniboys": [
+          {
+            "pots_fleurs": "bacs_balcon"
+          }
+        ]
+      },
+      "cave": [
+        {
+          "droite": "table"
+        },
+        {
+          "gauche": "plateau_reserve"
+        },
+        {
+          "fond": "outils"
+        }
+      ]
+    }
+  }

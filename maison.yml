@@ -2,9 +2,9 @@
 wcc_house:
     pieces:
         entree:
-          porte_entree: bouleau_vernis_3_points
+          porte_entree: chene_vernis_3_points
           murs: verts_bouteille
-          lumiere: lustre_shere_verre
+          lumiere: lustre_sfere_verre
           interupteurs: 3
           panneau_electrique:
             - disjoncteur_principal: h2RTX83
@@ -27,14 +27,14 @@ wcc_house:
             - meuble_haut: 3_parties
             - meuble_bas: 7_tirroirs
           equipements:
-            - plaques_cuisson:
-            - hote:
-            - four:
-            - micro_ondes:
-            - cafetiere:
-            - frigidaire:
-            - lavabo:
-            - lave_vaisselle:
+            - plaques_cuisson: xp12
+            - hote: aspi5
+            - four: convect_pulse
+            - micro_ondes: ceurfui
+            - cafetiere: nespress
+            - frigidaire: germa_vint
+            - lavabo: classic_metal
+            - lave_vaisselle: rowe_mini
         salon:
           murs: blanc
           radiateur: 1
@@ -43,37 +43,36 @@ wcc_house:
           interupteurs: 1
           prises_electrique: 1
           equipements: 
-            - television: lg_12s23
+            - television: l_12s23
             - box: free
-            - platines: technics_mk2
-            - table_de_mixage: denon
-            - enceintes: mackie_aplifiees
-            - carte_son: mackie
+            - platines: m2
+            - table_de_mixage: d_ty
+            - enceintes: aplifiees
+            - carte_son: stereo
           meubles:
             - table_et_chaises: table_ronde_chaise_transparante
             - canape: angle_poltron_et_sofa
-            - buffet:
-            - chaise_geante:
-            - etagere_cd:
-          bibliotheque:
+            - buffet: gris_metal
+            - chaise_geante: epreuve_art
+            - etagere_cd: 6_comparts
+          bibliotheque_integre: 3_etageres 
         bureau:
           murs: blanc
           radiateur: 1
           fenetre: 1
-          lumieres: 2_mural
-          interupteurs: 1
+          lumieres: 2_murales
           interupteurs: 1
           prises_electrique: 2
           meubles:
-            - atelier:
-            - bureau_ordinateur:
-            - table_a_dessin:
-            - tabouret:
-            - fauteuil:
+            - atelier: meuble_a_plans
+            - bureau_ordinateur: ike_reinv
+            - table_a_dessin: 1
+            - tabouret: 1
+            - fauteuil: 1
           equipements:
-            - ordinateur:
-            - kit_rpi:
-            - imprimante:
+            - ordinateur: win10
+            - kit_rpi: rpi2_no bluetooth
+            - imprimante: 1
         wc:
           murs: blanc
           lumieres: aplique_murale
@@ -101,36 +100,45 @@ wcc_house:
           murs: papier_peint_art_nouveau
           interupteurs: 1
           meubles:
-            - tringle:
-            - etagere:
-            - placard:
+            - tringle: 1
+            - etagere: 2
+            - placard: 3_compart
         chambres_miniboys:
-          murs:
-          radiateur:
-          fenetre:
-          lumieres:
+          murs: blanc_lamin
+          radiateur: 1
+          fenetre: 1
+          lumieres: 2
           interupteurs: 2
-          prises_electrique:
-          equipements:
+          prises_electrique: 1
+          meubles:
+            - lit: 2
+            - commodes: 2
+            - baby_foot: 1
+            - bureau: 1 
+          bibliotheque_integre: 4_etageres 
         chambre: 
-          murs:
-          radiateur:
-          fenetre:
-          lumieres:
+          murs: gris_souris
+          radiateur: 1
+          fenetre: 1
+          lumieres: 
+            - papillon: 1
+            - aplique_murale: 1
           interupteurs: 1
-          prises_electrique:
-          equipements:
+          prises_electrique: 2
+          equipements: 
+            - radio: aw_cd
+          meubles:
+            - lit: king_size
+            - commodes: 3
+            - console: 1
     balcons:
         balcon_salon:
-          - rosiers:
-          - salon_balcon:
+          - rosiers: 10
+          - salon_balcon: chaises_table
         balcon_chambres_miniboys:
-          - pots_fleurs:
-        lumières:
-          - interupteurs:
-          - ampoules:
+          - pots_fleurs: bacs_balcon
     cave:
-        - droite:
-        - gauche:
-        - fond:
+        - droite: table
+        - gauche: plateau_reserve
+        - fond: outils
 ...
