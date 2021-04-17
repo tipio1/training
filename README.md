@@ -1,6 +1,6 @@
 # training
 
-*training in programming languages js, yml, json*
+🪐 *training in programming languages js, yml, json*
 -----------------------------------------------------
 
 
