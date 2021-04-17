@@ -4,4 +4,4 @@
 -----------------------------------------------------
 
 
-> _determinate an .yml and/or .json object_
+> _determinate basic of js, an .yml and/or .json object_
