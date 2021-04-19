@@ -8,6 +8,8 @@
 
 
 > _exemple of file.json :_
+
+
    "couloir": {
         "murs": [
           {
