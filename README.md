@@ -5,9 +5,10 @@
 
 
 > _determinate basic of js, an .yml and/or .json object_
-> exemple of file.json  :
 
-   "couloir": {
+
+> _exemple of file.json :_
+   '"couloir": {
         "murs": [
           {
             "couleur": "verts_bouteille"
@@ -15,4 +16,4 @@
         ],
         "placard_chaussures": 4,
         "cadres": 6
-      },
+      },'
