@@ -8,7 +8,7 @@
 
 
 > _exemple of file.json :_
-   '"couloir": {
+   "couloir": {
         "murs": [
           {
             "couleur": "verts_bouteille"
@@ -16,4 +16,4 @@
         ],
         "placard_chaussures": 4,
         "cadres": 6
-      },'
+      },
