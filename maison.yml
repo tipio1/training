@@ -1,66 +1,130 @@
 ---
 wcc_house:
+    date_de_construction: 1975
+    adresse: rue_cornichon_de_mars
+    code_postal: 99001
+    accès:
+      piétons: rue_cornichon_de_mars
+      portails_voitures:
+        - principal: 1
+        - secondaire: 1 
+    nombre_de_hall: 15
+    jours_des_poubelles:
+      lundi: dechets_communs
+      mardi: dechets_recyclables
+      mercredi: déchets_communs
+      jeudi: déchets_recyclables
+      vendredi: déchets_communs
+    permanence_gardien: 
+      - horraires: 18_19h30
+    chauffage: 
+      chaudière: 
+        - modele: broncosore_17299
+      type: collectif 
+    espaces_communs: 
+      - banc: 4
+      - places_de_parking: 200
+    etage: 
+      - niveau: 2
+      - porte: gauche
     pieces:
         entree:
           porte_entree: chene_vernis_3_points
-          murs: verts_bouteille
+          murs: 
+            - couleur: verts_bouteille
           lumiere: lustre_sfere_verre
           interupteurs: 3
           panneau_electrique:
             - disjoncteur_principal: h2RTX83
             - disjoncteurs: 4
-          console_d_entree: angle_2_tirroirs
+          console_d_entree: 
+            - tiroirs: 2
           telephone: cabine_annee_70
-          porte_manteaux: 4_points
+          porte_manteaux: 
+            - points_d_acroche: 6
         couloir:
-          murs: verts_bouteille
+          murs: 
+            - couleur: verts_bouteille
           placard_chaussures: 4
           cadres: 6
         cuisine:
-          murs: vert_pistache
+          murs: 
+            - couleur: vert_pistache
           fenetre: 1
           lumieres: leds_plafond
           interupteurs: 1
           prises_electrique: 7
-          meuble_a_economat: 3_etageres
+          meuble_a_economat: 
+            - etageres: 3
           meubles_de_rangement:
-            - meuble_haut: 3_parties
-            - meuble_bas: 7_tirroirs
+            meuble_haut: 
+              - parties: 4
+            meuble_bas: 
+              - tiroirs: 7
           equipements:
-            - plaques_cuisson: xp12
-            - hote: aspi5
-            - four: convect_pulse
-            - micro_ondes: ceurfui
-            - cafetiere: nespress
-            - frigidaire: germa_vint
-            - lavabo: classic_metal
-            - lave_vaisselle: rowe_mini
+            plaques_cuisson: 
+              - modele: xp12
+            hote:
+              - modele: aspi5
+            four: 
+              - modele: convect_pulse
+            micro_ondes: 
+              - modele: ceurfui
+            cafetiere: 
+              - modele: nespress
+            frigidaire: 
+              - modele: germa_vint
+            lavabo: 
+              - modele: classic_metal
+            lave_vaisselle: 
+              - modele: rowe_mini
         salon:
-          murs: blanc
+          murs: 
+            - couleur: blanc
           radiateur: 1
           fenetres: 3
           lumieres: ampoule_avea
           interupteurs: 1
           prises_electrique: 1
           equipements: 
-            - television: l_12s23
-            - box: free
-            - platines: m2
-            - table_de_mixage: d_ty
-            - enceintes: aplifiees
-            - carte_son: stereo
+            television: 
+              - modele: l_12s23
+            box: 
+              - modele: free
+            platines:
+              - modele: m2
+            table_de_mixage: 
+              - modele: d_ty
+            enceintes: 
+              - modele: aplifiees
+            carte_son: 
+              - modele: stereo
           meubles:
-            - table_et_chaises: table_ronde_chaise_transparante
-            - canape: angle_poltron_et_sofa
-            - buffet: gris_metal
-            - chaise_geante: epreuve_art
-            - etagere_cd: 6_comparts
-          bibliotheque_integre: 3_etageres 
+            table_et_chaises:
+              table: 
+                - quantité: 1
+                - modele: rond_verre
+              chaise_transparantes:
+                - quantité: 4
+                - modele: plexi_transparant
+            canape: 
+              - modele: angle_poltron_et_sofa
+            buffet: 
+              - modele: gris_metal
+            chaise_geante: 
+              - modele: epreuve_art
+            etagere_cd: 
+              - modele: ikeo staummeul
+              - compartiments: 6
+            bibliotheque_integre: 
+              - etageres: 3 
         bureau:
-          murs: blanc
+          murs: 
+            - couleur: blanc
           radiateur: 1
           fenetre: 1
-          lumieres: 2_murales
+          lumieres: 
+            - murales: 2
           interupteurs: 1
           prises_electrique: 2
           meubles:
@@ -70,22 +134,33 @@ wcc_house:
             - tabouret: 1
             - fauteuil: 1
           equipements:
-            - ordinateur: win10
-            - kit_rpi: rpi2_no bluetooth
-            - imprimante: 1
+            ordinateur: 
+              - modele: win10
+            kit_rpi: 
+              - modele: rpi2_no bluetooth
+              - ecran: 1
+              - clavier: 1
+              - souris: 1
+            imprimante: 
+              - quantité: 1
+              - modele: can-50234
         wc:
-          murs: blanc
+          murs: 
+            - couleur: blanc
+            - cadres_papillons: 17
           lumieres: aplique_murale
           interupteurs: 1
-          placard: 2_etageres
-          cadres: papillons
+          placard:
+            - etageres: 2
           compteurs:
             - eau_froide: xzeau_froid
             - eau_chaude: xzeau_chaude
           equipements:
-            - toilette: amine_petit
+            toilette: 
+              - modele: lamine_petit
         sdb:
-          murs: carrelage_jaune_bleu
+          murs: 
+            - couleur: carrelage_jaune_bleu
           radiateur: 1
           fenetre: 1
           lumieres: 
@@ -94,30 +169,39 @@ wcc_house:
           interupteurs: 2
           prises_electrique: 1
           equipements:
-            - baignoire: kvl_28u
-            - lave_linge: faur_54Y7
+            baignoire: 
+              - modele: kvl_28u
+            lave_linge: 
+              - modele: faur_54Y7
         dressing:
-          murs: papier_peint_art_nouveau
+          murs: 
+            - couleur: papier_peint_art_nouveau
           interupteurs: 1
           meubles:
-            - tringle: 1
-            - etagere: 2
-            - placard: 3_compart
+            tringle: 1
+            etagere: 2
+            placard: 
+              - compartiments: 3
         chambres_miniboys:
-          murs: blanc_lamin
+          murs: 
+            - couleur: blanc_lamin
           radiateur: 1
           fenetre: 1
           lumieres: 2
           interupteurs: 2
           prises_electrique: 1
           meubles:
-            - lit: 2
-            - commodes: 2
-            - baby_foot: 1
-            - bureau: 1 
-          bibliotheque_integre: 4_etageres 
+            lit: 2
+            commodes: 2
+            baby_foot: 
+              - quantite: 1
+              - modele: bistot
+            bureau: 1 
+          bibliotheque_integre: 
+            - etageres: 4
         chambre: 
-          murs: gris_souris
+          murs: 
+            - couleur: gris_souris
           radiateur: 1
           fenetre: 1
           lumieres: 
@@ -126,19 +210,22 @@ wcc_house:
           interupteurs: 1
           prises_electrique: 2
           equipements: 
-            - radio: aw_cd
+            radio: 
+              - modele: aw_cd
           meubles:
             - lit: king_size
             - commodes: 3
             - console: 1
-    balcons:
-        balcon_salon:
-          - rosiers: 10
-          - salon_balcon: chaises_table
-        balcon_chambres_miniboys:
-          - pots_fleurs: bacs_balcon
-    cave:
-        - droite: table
-        - gauche: plateau_reserve
-        - fond: outils
+        balcons:
+          balcon_salon:
+            rosiers: 10
+            salon_balcon: 
+              - chaises: 2
+              - table: 1
+          balcon_chambres_miniboys:
+            - bacs_fleurs: 2 
+        cave:
+          - droite: table
+          - gauche: plateau_reserve
+          - fond: outils
 ...
