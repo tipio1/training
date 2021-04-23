@@ -7,40 +7,40 @@ wcc_house:
       city: "La teufrè"
       country: France
     access:
-      piétons: rue_cornhichon_de_mars
-      portails_voitures:
+      pedestrians: "rue cornhichon de mars"
+      carsportals:
         - principal: 1
-        - secondaire: 1 
-    nombre_de_hall: 15
-    jours_des_poubelles:
-      lundi: dechets_communs
-      mardi: dechets_recyclables
-      mercredi: déchets_communs
-      jeudi: déchets_recyclables
-      vendredi: déchets_communs
-    permanence_gardien: 
-      horaires:
-        debut: 18h
-        fin: 19h30
-    chauffage: 
-      chaudière: 
+        - secondary: 1 
+    numbers_of_hall: 15
+    trash_day:
+      monday: "common waste"
+      tuesday: "recycable waste"
+      wednesday: "common waste"
+      thursday: "recycable waste"
+      friday: "common waste"
+    guardian_permanence: 
+      schedules:
+        start: 18pm
+        end: 19.30pm
+    heater: 
+      boiler: 
         - modele: "Broncosore 17299"
-      type: collectif 
-    espaces_communs: 
-      - bancs: 4
-      - places_de_parking: 200
-    etage_wcc_house: 
-      - niveau: 2
-      - porte: gauche
-    pieces:
-        entree:
-          porte_entree: 
-            - modele: "chene vernis"
-            - fermeture: "3 points"
-          murs: 
-            - couleur: "verts bouteille"
-          lumiere: "lustre sfere verre"
-          interupteurs: 3
+      type: collective 
+    common_spaces: 
+      - benches: 4
+      - parking_places: 200
+    wcc_house_stairs: 
+      - level: 2
+      - door: left
+    rooms:
+        entrance:
+          front_door: 
+            - modele: "varnished oak"
+            - closure: "3 points"
+          walls: 
+            - color: "botle green"
+          lighting: "glass sphere chandelier"
+          switches: 3
           panneau_electrique:
             - disjoncteur_principal: h2RTX83
             - disjoncteurs: 4
