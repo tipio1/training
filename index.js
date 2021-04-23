@@ -1,5 +1,6 @@
 console.log("hello world");
 
+
 // A program is like a factory
 
 // Variables

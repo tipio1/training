@@ -1,10 +1,12 @@
 ---
 wcc_house:
     date_de_construction: 1975
-    adresse: rue_cornichon_de_mars
-    code_postal: 99001
+    address:
+      address1: "Rue Cornichon de Mars"
+      code_postal: 99001
+      commune: "La Frette"
     accès:
-      piétons: rue_cornichon_de_mars
+      piétons: rue_cornhichon_de_mars
       portails_voitures:
         - principal: 1
         - secondaire: 1 
@@ -16,40 +18,44 @@ wcc_house:
       jeudi: déchets_recyclables
       vendredi: déchets_communs
     permanence_gardien: 
-      - horraires: 18_19h30
+      horaires:
+        debut: 18h
+        fin: 19h30
     chauffage: 
       chaudière: 
-        - modele: broncosore_17299
+        - modele: "Broncosore 17299"
       type: collectif 
     espaces_communs: 
-      - banc: 4
+      - bancs: 4
       - places_de_parking: 200
-    etage: 
+    etage_wcc_house: 
       - niveau: 2
       - porte: gauche
     pieces:
         entree:
-          porte_entree: chene_vernis_3_points
+          porte_entree: 
+            - modele: "chene vernis"
+            - fermeture: "3 points"
           murs: 
-            - couleur: verts_bouteille
-          lumiere: lustre_sfere_verre
+            - couleur: "verts bouteille"
+          lumiere: "lustre sfere verre"
           interupteurs: 3
           panneau_electrique:
             - disjoncteur_principal: h2RTX83
             - disjoncteurs: 4
           console_d_entree: 
             - tiroirs: 2
-          telephone: cabine_annee_70
+          telephone: "cabine annee 70"
           porte_manteaux: 
             - points_d_acroche: 6
         couloir:
           murs: 
-            - couleur: verts_bouteille
+            - couleur: "verts bouteille"
+            - cadres: 6
           placard_chaussures: 4
-          cadres: 6
         cuisine:
           murs: 
-            - couleur: vert_pistache
+            - couleur: "vert pistache"
           fenetre: 1
           lumieres: leds_plafond
           interupteurs: 1
