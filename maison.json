@@ -10,14 +10,10 @@
     },
     "access": {
       "pedestrians": "rue cornhichon de mars",
-      "carsportals": [
-        {
-          "principal": 1
-        },
-        {
-          "secondary": 1
-        }
-      ]
+      "carsportals": {
+        "principal": 1,
+        "secondary": 1
+      }
     },
     "numbers_of_hall": 15,
     "trash_day": [
@@ -38,14 +34,10 @@
       }
     ],
     "guardian_permanence": {
-      "schedules": [
-        {
-          "start": "18pm"
-        },
-        {
-          "end": "19.30pm"
-        }
-      ]
+      "schedules": {
+        "start": "18pm",
+        "end": "19.30pm"
+      }
     },
     "heater": {
       "boiler": {
@@ -424,17 +416,11 @@
           "flower_boxes": 2
         }
       },
-      "cellar": [
-        {
-          "right": "table"
-        },
-        {
-          "left": "reserve tray"
-        },
-        {
-          "background": "tools"
-        }
-      ]
+      "cellar": {
+        "right": "table",
+        "left": "reserve tray",
+        "background": "tools"
+      }
     }
   }
 }
