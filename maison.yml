@@ -20,8 +20,8 @@ wcc_house:
       friday: "common waste"
     guardian_permanence: 
       schedules:
-        start: 18pm
-        end: 19.30pm
+        - start: 18pm
+        - end: 19.30pm
     heater: 
       boiler: 
         - modele: "Broncosore 17299"
@@ -38,53 +38,53 @@ wcc_house:
             - modele: "varnished oak"
             - closure: "3 points"
           walls: 
-            - color: "botle green"
+            color: "botle green"
           lighting: "glass sphere chandelier"
           switches: 3
-          panneau_electrique:
-            - disjoncteur_principal: h2RTX83
-            - disjoncteurs: 4
-          console_d_entree: 
-            - tiroirs: 2
-          telephone: "cabine annee 70"
-          porte_manteaux: 
-            - points_d_acroche: 6
-        couloir:
-          murs: 
-            - couleur: "verts bouteille"
-            - cadres: 6
-          placard_chaussures: 4
-        cuisine:
-          murs: 
-            - couleur: "vert pistache"
-          fenetre: 1
-          lumieres: leds_plafond
-          interupteurs: 1
-          prises_electrique: 7
-          meuble_a_economat: 
-            - etageres: 3
-          meubles_de_rangement:
-            meuble_haut: 
-              - parties: 4
-            meuble_bas: 
-              - tiroirs: 7
-          equipements:
+          electrical_box:
+            - main_circuit_breaker: h2RTX83
+            - circuit_breaker: 4
+          entrance_console: 
+            drawers: 2
+          telephone: "70's cabine"
+          coat_hanger: 
+            hooks: 6
+        corridor:
+          walls: 
+            - color: "botle green"
+            - frames: 6
+          shoe_closet: 4
+        kitchen:
+          walls: 
+            color: "pistachio green"
+          windows: 1
+          lighting: "planfond leds"
+          switches: 1
+          electrical_outlets: 7
+          kitchen_economat: 
+            shelf: 3
+          kitchen_furniture:
+            tall_cabinet: 
+              drawers: 4
+            low_cabinet: 
+              drawers: 7
+          equipments:
             plaques_cuisson: 
-              - modele: xp12
+              modele: xp12
             hote:
-              - modele: aspi5
+              modele: aspi5
             four: 
-              - modele: convect_pulse
+              modele: convect_pulse
             micro_ondes: 
-              - modele: ceurfui
+              modele: ceurfui
             cafetiere: 
-              - modele: nespress
+              modele: nespress
             frigidaire: 
-              - modele: germa_vint
+              modele: germa_vint
             lavabo: 
-              - modele: classic_metal
+              modele: classic_metal
             lave_vaisselle: 
-              - modele: rowe_mini
+              modele: rowe_mini
         salon:
           murs: 
             - couleur: blanc
