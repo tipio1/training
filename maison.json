@@ -1,493 +1,438 @@
 {
   "wcc_house": {
-    "date_de_construction": 1975,
-    "adresse": "rue_cornichon_de_mars",
-    "code_postal": 99001,
-    "accès": {
-      "piétons": "rue_cornichon_de_mars",
-      "portails_voitures": [
+    "construction_date": 1975,
+    "address": {
+      "name": "wcc",
+      "address1": "Rue Cornichon de Mars",
+      "zip_code": 99001,
+      "city": "La teufrè",
+      "country": "France"
+    },
+    "access": {
+      "pedestrians": "rue cornhichon de mars",
+      "carsportals": [
         {
           "principal": 1
         },
         {
-          "secondaire": 1
+          "secondary": 1
         }
       ]
     },
-    "nombre_de_hall": 15,
-    "jours_des_poubelles": {
-      "lundi": "dechets_communs",
-      "mardi": "dechets_recyclables",
-      "mercredi": "déchets_communs",
-      "jeudi": "déchets_recyclables",
-      "vendredi": "déchets_communs"
-    },
-    "permanence_gardien": [
+    "numbers_of_hall": 15,
+    "trash_day": [
       {
-        "horraires": "18_19h30"
+        "monday": "common waste"
+      },
+      {
+        "tuesday": "recycable waste"
+      },
+      {
+        "wednesday": "common waste"
+      },
+      {
+        "thursday": "recycable waste"
+      },
+      {
+        "friday": "common waste"
       }
     ],
-    "chauffage": {
-      "chaudière": [
+    "guardian_permanence": {
+      "schedules": [
         {
-          "modele": "broncosore_17299"
+          "start": "18pm"
+        },
+        {
+          "end": "19.30pm"
         }
-      ],
-      "type": "collectif"
+      ]
     },
-    "espaces_communs": [
+    "heater": {
+      "boiler": {
+        "modele": "Broncosore 17299"
+      },
+      "type": "collective"
+    },
+    "common_spaces": [
       {
-        "banc": 4
+        "benches": 4
       },
       {
-        "places_de_parking": 200
+        "parking_places": 200
       }
     ],
-    "etage": [
+    "wcc_house_stairs": [
       {
-        "niveau": 2
+        "level": 2
       },
       {
-        "porte": "gauche"
+        "door": "left"
       }
     ],
-    "pieces": {
-      "entree": {
-        "porte_entree": "chene_vernis_3_points",
-        "murs": [
+    "rooms": {
+      "entrance": {
+        "front_door": [
           {
-            "couleur": "verts_bouteille"
-          }
-        ],
-        "lumiere": "lustre_sfere_verre",
-        "interupteurs": 3,
-        "panneau_electrique": [
-          {
-            "disjoncteur_principal": "h2RTX83"
+            "modele": "varnished oak"
           },
           {
-            "disjoncteurs": 4
+            "closure": "3 points"
           }
         ],
-        "console_d_entree": [
-          {
-            "tiroirs": 2
-          }
-        ],
-        "telephone": "cabine_annee_70",
-        "porte_manteaux": [
-          {
-            "points_d_acroche": 6
-          }
-        ]
-      },
-      "couloir": {
-        "murs": [
-          {
-            "couleur": "verts_bouteille"
-          }
-        ],
-        "placard_chaussures": 4,
-        "cadres": 6
-      },
-      "cuisine": {
-        "murs": [
-          {
-            "couleur": "vert_pistache"
-          }
-        ],
-        "fenetre": 1,
-        "lumieres": "leds_plafond",
-        "interupteurs": 1,
-        "prises_electrique": 7,
-        "meuble_a_economat": [
-          {
-            "etageres": 3
-          }
-        ],
-        "meubles_de_rangement": {
-          "meuble_haut": [
-            {
-              "parties": 4
-            }
-          ],
-          "meuble_bas": [
-            {
-              "tiroirs": 7
-            }
-          ]
+        "walls": {
+          "colour": "botle green"
         },
-        "equipements": {
-          "plaques_cuisson": [
-            {
-              "modele": "xp12"
-            }
-          ],
-          "hote": [
-            {
-              "modele": "aspi5"
-            }
-          ],
-          "four": [
-            {
-              "modele": "convect_pulse"
-            }
-          ],
-          "micro_ondes": [
-            {
-              "modele": "ceurfui"
-            }
-          ],
-          "cafetiere": [
-            {
-              "modele": "nespress"
-            }
-          ],
-          "frigidaire": [
-            {
-              "modele": "germa_vint"
-            }
-          ],
-          "lavabo": [
-            {
-              "modele": "classic_metal"
-            }
-          ],
-          "lave_vaisselle": [
-            {
-              "modele": "rowe_mini"
-            }
-          ]
+        "lighting": "glass sphere chandelier",
+        "switches": 3,
+        "electrical_box": [
+          {
+            "main_circuit_breaker": "h2RTX83"
+          },
+          {
+            "circuit_breaker": 4
+          }
+        ],
+        "entrance_console": {
+          "drawers": 2
+        },
+        "telephone": "70's cabine",
+        "coat_hanger": {
+          "hooks": 6
         }
       },
-      "salon": {
-        "murs": [
+      "corridor": {
+        "walls": [
           {
-            "couleur": "blanc"
+            "colour": "botle green"
+          },
+          {
+            "frames": 6
           }
         ],
-        "radiateur": 1,
-        "fenetres": 3,
-        "lumieres": "ampoule_avea",
-        "interupteurs": 1,
-        "prises_electrique": 1,
-        "equipements": {
-          "television": [
-            {
-              "modele": "l_12s23"
-            }
-          ],
-          "box": [
-            {
-              "modele": "free"
-            }
-          ],
-          "platines": [
-            {
-              "modele": "m2"
-            }
-          ],
-          "table_de_mixage": [
-            {
-              "modele": "d_ty"
-            }
-          ],
-          "enceintes": [
-            {
-              "modele": "aplifiees"
-            }
-          ],
-          "carte_son": [
-            {
-              "modele": "stereo"
-            }
-          ]
+        "shoes_closet": 4
+      },
+      "kitchen": {
+        "walls": {
+          "colour": "pistachio green"
         },
-        "meubles": {
-          "table_et_chaises": {
+        "windows": 1,
+        "lighting": "planfond leds",
+        "switches": 1,
+        "electrical_outlets": 7,
+        "kitchen_economat": {
+          "shelf": 3
+        },
+        "kitchen_furniture": {
+          "tall_cabinet": {
+            "drawers": 4
+          },
+          "low_cabinet": {
+            "drawers": 7
+          }
+        },
+        "equipments": {
+          "cooking_plates": {
+            "model": "xp12"
+          },
+          "host": {
+            "model": "aspi5"
+          },
+          "oven": {
+            "model": "convect pulse"
+          },
+          "microwave": {
+            "model": "ceurfui"
+          },
+          "coffee maker": {
+            "model": "nespress"
+          },
+          "fridge": {
+            "model": "germa came"
+          },
+          "sink": {
+            "model": "classic metal"
+          },
+          "dishwasher": {
+            "model": "rowe mini"
+          }
+        }
+      },
+      "living_room": {
+        "walls": {
+          "colour": "white"
+        },
+        "radiator": 1,
+        "windows": 3,
+        "lights": "bulb avea",
+        "switches": 1,
+        "electrical_outlets": 1,
+        "equipment": {
+          "television": {
+            "model": "l_12s23"
+          },
+          "box": {
+            "model": "free"
+          },
+          "turntables": {
+            "model": "m2"
+          },
+          "mix_table": {
+            "model": "d_ty"
+          },
+          "pregnant": {
+            "model": "aplified"
+          },
+          "soundcard": {
+            "model": "stereo"
+          }
+        },
+        "furniture": {
+          "table_and_chairs": {
             "table": [
               {
-                "quantité": 1
+                "quantity": 1
               },
               {
-                "modele": "rond_verre"
+                "model": "round glass"
               }
             ],
-            "chaise_transparantes": [
+            "transparent_chair": [
               {
-                "quantité": 4
+                "quantity": 4
               },
               {
-                "modele": "plexi_transparant"
+                "model": "transparent plexiglass"
               }
             ]
           },
-          "canape": [
+          "couch": {
+            "model": "coward poltron & sofa"
+          },
+          "buffet": {
+            "model": "metal gray"
+          },
+          "giant_chair": {
+            "model": "art proof"
+          },
+          "cd_shelf": [
             {
-              "modele": "angle_poltron_et_sofa"
-            }
-          ],
-          "buffet": [
-            {
-              "modele": "gris_metal"
-            }
-          ],
-          "chaise_geante": [
-            {
-              "modele": "epreuve_art"
-            }
-          ],
-          "etagere_cd": [
-            {
-              "modele": "ikeo staummeul"
+              "model": "ikeo staummeul"
             },
             {
-              "compartiments": 6
+              "compartments": 6
             }
           ],
-          "bibliotheque_integre": [
-            {
-              "etageres": 3
-            }
-          ]
+          "integrated_library": {
+            "shelves": 3
+          }
         }
       },
-      "bureau": {
-        "murs": [
+      "office": {
+        "walls": {
+          "colour": "White"
+        },
+        "radiator": 1,
+        "window": 1,
+        "lights": {
+          "murals": 2
+        },
+        "switches": 1,
+        "electrical_outlets": 2,
+        "furniture": [
           {
-            "couleur": "blanc"
+            "workshop": "plan cabinet"
+          },
+          {
+            "computer_desk": "ike_reinv"
+          },
+          {
+            "drawing_table": 1
+          },
+          {
+            "stool": 1
+          },
+          {
+            "armchair": 1
           }
         ],
-        "radiateur": 1,
-        "fenetre": 1,
-        "lumieres": [
-          {
-            "murales": 2
-          }
-        ],
-        "interupteurs": 1,
-        "prises_electrique": 2,
-        "meubles": [
-          {
-            "atelier": "meuble_a_plans"
+        "equipment": {
+          "computer": {
+            "model": "win10"
           },
-          {
-            "bureau_ordinateur": "ike_reinv"
-          },
-          {
-            "table_a_dessin": 1
-          },
-          {
-            "tabouret": 1
-          },
-          {
-            "fauteuil": 1
-          }
-        ],
-        "equipements": {
-          "ordinateur": [
+          "rpi_kit": [
             {
-              "modele": "win10"
+              "model": "rpi2_no bluetooth"
+            },
+            {
+              "screen": 1
+            },
+            {
+              "keyboard": 1
+            },
+            {
+              "mouse": 1
             }
           ],
-          "kit_rpi": [
+          "printer": [
             {
-              "modele": "rpi2_no bluetooth"
+              "quantity": 1
             },
             {
-              "ecran": 1
-            },
-            {
-              "clavier": 1
-            },
-            {
-              "souris": 1
-            }
-          ],
-          "imprimante": [
-            {
-              "quantité": 1
-            },
-            {
-              "modele": "can-50234"
+              "model": "can-50234"
             }
           ]
         }
       },
       "wc": {
-        "murs": [
+        "walls": [
           {
-            "couleur": "blanc"
+            "colour": "White"
           },
           {
-            "cadres_papillons": 17
+            "butterfly_frames": 17
           }
         ],
-        "lumieres": "aplique_murale",
-        "interupteurs": 1,
-        "placard": [
+        "lights": "wall replica",
+        "switches": 1,
+        "cupboard": {
+          "shelves": 2
+        },
+        "counters": [
           {
-            "etageres": 2
-          }
-        ],
-        "compteurs": [
-          {
-            "eau_froide": "xzeau_froid"
+            "cold_water": "xzeau_froid"
           },
           {
-            "eau_chaude": "xzeau_chaude"
+            "hot_water": "xzeau_chaude"
           }
         ],
-        "equipements": {
-          "toilette": [
-            {
-              "modele": "lamine_petit"
-            }
-          ]
+        "equipment": {
+          "toilet": {
+            "model": "laminated small"
+          }
         }
       },
-      "sdb": {
-        "murs": [
+      "bathroom": {
+        "walls": {
+          "color": "yellow and blue tiles"
+        },
+        "radiator": 1,
+        "window": 1,
+        "lights": [
           {
-            "couleur": "carrelage_jaune_bleu"
-          }
-        ],
-        "radiateur": 1,
-        "fenetre": 1,
-        "lumieres": [
-          {
-            "murale": "applique"
+            "wall": "wall lamp"
           },
           {
-            "plafonnier": "24rp_rond"
+            "ceiling_light": "24rp_rond"
           }
         ],
-        "interupteurs": 2,
-        "prises_electrique": 1,
-        "equipements": {
-          "baignoire": [
-            {
-              "modele": "kvl_28u"
-            }
-          ],
-          "lave_linge": [
-            {
-              "modele": "faur_54Y7"
-            }
-          ]
+        "switches": 2,
+        "electrical_outlets": 1,
+        "equipment": {
+          "bathtub": {
+            "model": "kvl_28u"
+          },
+          "washing_machine": {
+            "model": "faur_54Y7"
+          }
         }
       },
-      "dressing": {
-        "murs": [
-          {
-            "couleur": "papier_peint_art_nouveau"
+      "dressing_room": {
+        "walls": {
+          "color": "art nouveau wallpaper"
+        },
+        "switches": 1,
+        "furniture": {
+          "rod": 1,
+          "shelf": 2,
+          "cupboard": {
+            "compartments": 3
           }
-        ],
-        "interupteurs": 1,
-        "meubles": {
-          "tringle": 1,
-          "etagere": 2,
-          "placard": [
-            {
-              "compartiments": 3
-            }
-          ]
         }
       },
-      "chambres_miniboys": {
-        "murs": [
-          {
-            "couleur": "blanc_lamin"
-          }
-        ],
-        "radiateur": 1,
-        "fenetre": 1,
-        "lumieres": 2,
-        "interupteurs": 2,
-        "prises_electrique": 1,
-        "meubles": {
-          "lit": 2,
-          "commodes": 2,
+      "miniboys_rooms": {
+        "walls": {
+          "color": "laminated white"
+        },
+        "radiator": 1,
+        "window": 1,
+        "lights": 2,
+        "switches": 2,
+        "electrical_outlets": 1,
+        "furniture": {
+          "bed": 2,
+          "dressers": 2,
           "baby_foot": [
             {
-              "quantite": 1
+              "quantity": 1
             },
             {
-              "modele": "bistot"
+              "model": "bistro"
             }
           ],
-          "bureau": 1
+          "office": 1
         },
-        "bibliotheque_integre": [
-          {
-            "etageres": 4
-          }
-        ]
+        "integrated_library": {
+          "shelves": 4
+        }
       },
-      "chambre": {
-        "murs": [
-          {
-            "couleur": "gris_souris"
-          }
-        ],
-        "radiateur": 1,
-        "fenetre": 1,
-        "lumieres": [
-          {
-            "papillon": 1
-          },
-          {
-            "aplique_murale": 1
-          }
-        ],
-        "interupteurs": 1,
-        "prises_electrique": 2,
-        "equipements": {
-          "radio": [
-            {
-              "modele": "aw_cd"
-            }
-          ]
+      "bedroom": {
+        "walls": {
+          "color": "mouse gray"
         },
-        "meubles": [
+        "radiator": 1,
+        "window": 1,
+        "lights": [
           {
-            "lit": "king_size"
+            "butterfly": 1
           },
           {
-            "commodes": 3
+            "wall mount": 1
+          }
+        ],
+        "switches": 1,
+        "electrical_outlets": 2,
+        "equipment": {
+          "radio": {
+            "model": "aw_cd"
+          }
+        },
+        "furniture": [
+          {
+            "bed": "king size"
+          },
+          {
+            "dressers": 3
           },
           {
             "console": 1
           }
         ]
       },
-      "balcons": {
-        "balcon_salon": {
-          "rosiers": 10,
-          "salon_balcon": [
+      "balconies": {
+        "balcony_living_room": {
+          "roses": 10,
+          "balcony_lounge": [
             {
-              "chaises": 2
+              "chairs": 2
             },
             {
               "table": 1
             }
           ]
         },
-        "balcon_chambres_miniboys": [
-          {
-            "bacs_fleurs": 2
-          }
-        ]
+        "balcony_miniboys_rooms": {
+          "flower_boxes": 2
+        }
       },
-      "cave": [
+      "cellar": [
         {
-          "droite": "table"
+          "right": "table"
         },
         {
-          "gauche": "plateau_reserve"
+          "left": "reserve tray"
         },
         {
-          "fond": "outils"
+          "background": "tools"
         }
       ]
     }

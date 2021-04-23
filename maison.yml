@@ -2,6 +2,7 @@
 wcc_house:
     construction_date: 1975
     address:
+      name: wcc
       address1: "Rue Cornichon de Mars"
       zip_code: 99001
       city: "La teufrè"
@@ -13,18 +14,18 @@ wcc_house:
         - secondary: 1 
     numbers_of_hall: 15
     trash_day:
-      monday: "common waste"
-      tuesday: "recycable waste"
-      wednesday: "common waste"
-      thursday: "recycable waste"
-      friday: "common waste"
+      - monday: "common waste"
+      - tuesday: "recycable waste"
+      - wednesday: "common waste"
+      - thursday: "recycable waste"
+      - friday: "common waste"
     guardian_permanence: 
       schedules:
         - start: 18pm
         - end: 19.30pm
     heater: 
       boiler: 
-        - modele: "Broncosore 17299"
+        modele: "Broncosore 17299"
       type: collective 
     common_spaces: 
       - benches: 4
@@ -38,7 +39,7 @@ wcc_house:
             - modele: "varnished oak"
             - closure: "3 points"
           walls: 
-            color: "botle green"
+            colour: "botle green"
           lighting: "glass sphere chandelier"
           switches: 3
           electrical_box:
@@ -51,12 +52,12 @@ wcc_house:
             hooks: 6
         corridor:
           walls: 
-            - color: "botle green"
+            - colour: "botle green"
             - frames: 6
-          shoe_closet: 4
+          shoes_closet: 4
         kitchen:
           walls: 
-            color: "pistachio green"
+            colour: "pistachio green"
           windows: 1
           lighting: "planfond leds"
           switches: 1
@@ -69,170 +70,170 @@ wcc_house:
             low_cabinet: 
               drawers: 7
           equipments:
-            plaques_cuisson: 
-              modele: xp12
-            hote:
-              modele: aspi5
-            four: 
-              modele: convect_pulse
-            micro_ondes: 
-              modele: ceurfui
-            cafetiere: 
-              modele: nespress
-            frigidaire: 
-              modele: germa_vint
-            lavabo: 
-              modele: classic_metal
-            lave_vaisselle: 
-              modele: rowe_mini
-        salon:
-          murs: 
-            - couleur: blanc
-          radiateur: 1
-          fenetres: 3
-          lumieres: ampoule_avea
-          interupteurs: 1
-          prises_electrique: 1
-          equipements: 
-            television: 
-              - modele: l_12s23
-            box: 
-              - modele: free
-            platines:
-              - modele: m2
-            table_de_mixage: 
-              - modele: d_ty
-            enceintes: 
-              - modele: aplifiees
-            carte_son: 
-              - modele: stereo
-          meubles:
-            table_et_chaises:
-              table: 
-                - quantité: 1
-                - modele: rond_verre
-              chaise_transparantes:
-                - quantité: 4
-                - modele: plexi_transparant
-            canape: 
-              - modele: angle_poltron_et_sofa
-            buffet: 
-              - modele: gris_metal
-            chaise_geante: 
-              - modele: epreuve_art
-            etagere_cd: 
-              - modele: ikeo staummeul
-              - compartiments: 6
-            bibliotheque_integre: 
-              - etageres: 3 
-        bureau:
-          murs: 
-            - couleur: blanc
-          radiateur: 1
-          fenetre: 1
-          lumieres: 
-            - murales: 2
-          interupteurs: 1
-          prises_electrique: 2
-          meubles:
-            - atelier: meuble_a_plans
-            - bureau_ordinateur: ike_reinv
-            - table_a_dessin: 1
-            - tabouret: 1
-            - fauteuil: 1
-          equipements:
-            ordinateur: 
-              - modele: win10
-            kit_rpi: 
-              - modele: rpi2_no bluetooth
-              - ecran: 1
-              - clavier: 1
-              - souris: 1
-            imprimante: 
-              - quantité: 1
-              - modele: can-50234
+            cooking_plates:
+              model: xp12
+            host:
+              model: aspi5
+            oven:
+              model: "convect pulse"
+            microwave:
+              model: ceurfui
+            coffee maker:
+              model: nespress
+            fridge:
+              model: "germa came"
+            sink:
+              model: "classic metal"
+            dishwasher:
+              model: "rowe mini"
+        living_room:
+          walls:
+            colour: white
+          radiator: 1
+          windows: 3
+          lights: "bulb avea"
+          switches: 1
+          electrical_outlets: 1
+          equipment:
+            television:
+              model: l_12s23
+            box:
+              model: free
+            turntables:
+              model: m2
+            mix_table:
+              model: d_ty
+            pregnant:
+              model: aplified
+            soundcard:
+              model: stereo
+          furniture:
+            table_and_chairs:
+              table:
+                - quantity: 1
+                - model: "round glass"
+              transparent_chair:
+                - quantity: 4
+                - model: "transparent plexiglass"
+            couch:
+              model: "coward poltron & sofa"
+            buffet:
+              model: metal gray
+            giant_chair:
+              model: "art proof"
+            cd_shelf:
+              - model: "ikeo staummeul"
+              - compartments: 6
+            integrated_library:
+              shelves: 3
+        office:
+          walls:
+            colour: White 
+          radiator: 1
+          window: 1
+          lights:
+            murals: 2
+          switches: 1
+          electrical_outlets: 2
+          furniture:
+            - workshop: "plan cabinet"
+            - computer_desk: ike_reinv
+            - drawing_table: 1
+            - stool: 1
+            - armchair: 1
+          equipment:
+            computer:
+              model: win10
+            rpi_kit:
+              - model: "rpi2_no bluetooth"
+              - screen: 1
+              - keyboard: 1
+              - mouse: 1
+            printer:
+              - quantity: 1
+              - model: can-50234
         wc:
-          murs: 
-            - couleur: blanc
-            - cadres_papillons: 17
-          lumieres: aplique_murale
-          interupteurs: 1
-          placard:
-            - etageres: 2
-          compteurs:
-            - eau_froide: xzeau_froid
-            - eau_chaude: xzeau_chaude
-          equipements:
-            toilette: 
-              - modele: lamine_petit
-        sdb:
-          murs: 
-            - couleur: carrelage_jaune_bleu
-          radiateur: 1
-          fenetre: 1
-          lumieres: 
-            - murale: applique
-            - plafonnier: 24rp_rond
-          interupteurs: 2
-          prises_electrique: 1
-          equipements:
-            baignoire: 
-              - modele: kvl_28u
-            lave_linge: 
-              - modele: faur_54Y7
-        dressing:
-          murs: 
-            - couleur: papier_peint_art_nouveau
-          interupteurs: 1
-          meubles:
-            tringle: 1
-            etagere: 2
-            placard: 
-              - compartiments: 3
-        chambres_miniboys:
-          murs: 
-            - couleur: blanc_lamin
-          radiateur: 1
-          fenetre: 1
-          lumieres: 2
-          interupteurs: 2
-          prises_electrique: 1
-          meubles:
-            lit: 2
-            commodes: 2
-            baby_foot: 
-              - quantite: 1
-              - modele: bistot
-            bureau: 1 
-          bibliotheque_integre: 
-            - etageres: 4
-        chambre: 
-          murs: 
-            - couleur: gris_souris
-          radiateur: 1
-          fenetre: 1
-          lumieres: 
-            - papillon: 1
-            - aplique_murale: 1
-          interupteurs: 1
-          prises_electrique: 2
-          equipements: 
-            radio: 
-              - modele: aw_cd
-          meubles:
-            - lit: king_size
-            - commodes: 3
+          walls:
+            - colour: White
+            - butterfly_frames: 17
+          lights: "wall replica"
+          switches: 1
+          cupboard:
+            shelves: 2
+          counters:
+            - cold_water: xzeau_froid
+            - hot_water: xzeau_chaude
+          equipment:
+            toilet:
+              model: laminated small
+        bathroom:
+          walls:
+            color: "yellow and blue tiles"
+          radiator: 1
+          window: 1
+          lights:
+            - wall: "wall lamp"
+            - ceiling_light: 24rp_rond
+          switches: 2
+          electrical_outlets: 1
+          equipment:
+            bathtub:
+              model: kvl_28u
+            washing_machine:
+              model: faur_54Y7
+        dressing_room:
+          walls:
+            color: "art nouveau wallpaper"
+          switches: 1
+          furniture:
+            rod: 1
+            shelf: 2
+            cupboard:
+              compartments: 3
+        miniboys_rooms:
+          walls:
+            color: "laminated white"
+          radiator: 1
+          window: 1
+          lights: 2
+          switches: 2
+          electrical_outlets: 1
+          furniture:
+            bed: 2
+            dressers: 2
+            baby_foot:
+              - quantity: 1
+              - model: bistro
+            office: 1
+          integrated_library:
+            shelves: 4
+        bedroom:
+          walls:
+            color: "mouse gray"
+          radiator: 1
+          window: 1
+          lights:
+            - butterfly: 1
+            - wall mount: 1
+          switches: 1
+          electrical_outlets: 2
+          equipment:
+            radio:
+              model: aw_cd
+          furniture:
+            - bed: "king size"
+            - dressers: 3
             - console: 1
-        balcons:
-          balcon_salon:
-            rosiers: 10
-            salon_balcon: 
-              - chaises: 2
+        balconies:
+          balcony_living_room:
+            roses: 10
+            balcony_lounge:
+              - chairs: 2
               - table: 1
-          balcon_chambres_miniboys:
-            - bacs_fleurs: 2 
-        cave:
-          - droite: table
-          - gauche: plateau_reserve
-          - fond: outils
+          balcony_miniboys_rooms:
+            flower_boxes: 2
+        cellar:
+          - right: table
+          - left: "reserve tray"
+          - background: tools
 ...
