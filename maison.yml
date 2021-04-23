@@ -1,11 +1,12 @@
 ---
 wcc_house:
-    date_de_construction: 1975
+    construction_date: 1975
     address:
       address1: "Rue Cornichon de Mars"
-      code_postal: 99001
-      commune: "La Frette"
-    accès:
+      zip_code: 99001
+      city: "La teufrè"
+      country: France
+    access:
       piétons: rue_cornhichon_de_mars
       portails_voitures:
         - principal: 1
