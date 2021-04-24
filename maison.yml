@@ -2,13 +2,13 @@
 wcc_house:
     construction_date: 1975
     address:
-      name: wcc
-      address1: "Rue Cornichon de Mars"
+      name: wcc familly
+      address1: "Arkham road"
       zip_code: 99001
-      city: "La teufrè"
+      city: "La teufrèst"
       country: France
     access:
-      pedestrians: "rue cornhichon de mars"
+      pedestrians: "Arkham road"
       carsportals:
         principal: 1
         secondary: 1 
