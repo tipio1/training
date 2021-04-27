@@ -137,15 +137,17 @@ wcc_house:
           electrical_outlets: 2
           furniture:
             - workshop: "plan cabinet"
-            - computer_desk: ike_reinv
+            - computer_desk: "ike reinv"
             - drawing_table: 1
             - stool: 1
             - armchair: 1
           equipment:
-            computer:
-              model: win10
+            computers:
+              model: 
+                - lenovo: "win 10"
+                - chromebook: chromeOS
             rpi_kit:
-              - model: "rpi2_no bluetooth"
+              - model: "rpi2 no bluetooth"
               - screen: 1
               - keyboard: 1
               - mouse: 1
@@ -203,7 +205,7 @@ wcc_house:
             dressers: 2
             baby_foot:
               - quantity: 1
-              - model: bistro
+              - model: bidtro
             office: 1
           integrated_library:
             shelves: 4
