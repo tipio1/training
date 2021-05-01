@@ -5,6 +5,7 @@ console.log("hello world");
 // Variables
 // A variable is like a box where you can put anything you want into.
 // A variable must me declared (building the box) and assigned (put stuff inside - give it a value)
+// const and let are keywords to declare a variable : a let can be reassigned but a const can't
 
 let a = 1;
 let b;
@@ -23,9 +24,3 @@ console.log(c, d);
 
 let e = c + 1;
 console.log(e);
-
-// Conditionnals
-
-// Iterations
-
-// Functions
