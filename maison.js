@@ -18,3 +18,4 @@ let drawers = house.wcc_house.rooms.entrance.entrance_console.drawers + house.wc
 console.log("the wcc's building has", carsportals, "carportals,", "the wcc's house has", drawers, "drawers")
 let electrical_outlets = house.wcc_house.rooms.kitchen.electrical_outlets + house.wcc_house.rooms.living_room.electrical_outlets + house.wcc_house.rooms.office.electrical_outlets
 console.log(electrical_outlets)
+console.log("goodbye")
