@@ -7,7 +7,7 @@ console.log("hello world");
 // A variable must me declared (building the box) and assigned (put stuff inside - give it a value)
 // const and let are keywords to declare a variable : a let can be reassigned but a const can't
 
-let a = 1;
+let a = 3;
 let b;
 b = 2;
 console.log(a);
