@@ -4,7 +4,7 @@ let temperature = 20;
 
 console.log(temperature > 35);
 
-// operators : == (egalite), != (inegalite) > (sup), < (inf), >= (sup ou egal), <= (inf ou egal)
+// operators logiques : == (egalite), != (inegalite) > (sup), < (inf), >= (sup ou egal), <= (inf ou egal)
 
 // operateurs binaires : && (and), || (or)
 
